@@ -1,0 +1,39 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+// References:
+// - https://support.mozilla.org/en-US/questions/1022969
+// - https://userstyles.org/styles/121860/thunderbird-chris-clean-adaption-no1
+
+$tree-row: "treechildren::-moz-tree-row";
+$tree-cell: "treechildren::-moz-tree-cell";
+$tree-cell-text: "treechildren::-moz-tree-cell-text";
+
+#threadTree {
+  $collapsed-thread: "(container, closed, hasUnread)";
+
+  #{$tree-row} {
+    height: 34px;
+  }
+
+  #{$tree-cell} {
+    background-color: #f3f3f3;
+  }
+
+  #{$tree-cell}(unread),
+  #{$tree-cell}#{$collapsed-thread} {
+    background-color: #ffffff;
+  }
+
+  #{$tree-cell}(selected, focus) {
+    background-color: Highlight;
+  }
+
+  #{$tree-cell-text} {
+    font-size: 12px;
+  }
+
+  #{$tree-cell-text}#{$collapsed-thread} {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
