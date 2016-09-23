@@ -13,10 +13,9 @@ $tree-cell-text: "treechildren::-moz-tree-cell-text";
 
   #{$tree-row} {
     height: 34px;
-  }
-
-  #{$tree-cell} {
     background-color: #f3f3f3;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: none;
   }
 
   #{$tree-cell}(unread),
