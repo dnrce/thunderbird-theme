@@ -1,3 +1,4 @@
+// Today Pane
 #today-pane-panel {
   // Use a consistent font
   * {
@@ -8,4 +9,10 @@
   #agenda-listbox {
     -moz-appearance: -moz-mac-vibrancy-light;
   }
+}
+
+// Flatten all calendar items
+.calendar-color-box {
+  background-image: none;
+  border-radius: 0;
 }
