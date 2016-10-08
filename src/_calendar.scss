@@ -1,4 +1,10 @@
 #today-pane-panel {
+  // Use a consistent font
+  * {
+    font-family: -apple-system;
+  }
+
+  // Vibrant appearance
   #agenda-listbox {
     -moz-appearance: -moz-mac-vibrancy-light;
   }
